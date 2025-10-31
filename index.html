@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Ujian Tengah Semester Pemrograman Web Dasar - Soal 2 Final</title>
+    <style>
+        /* Ketentuan Wajib Soal: Background warna kuning */
+        body {
+            background-color: yellow;
+            font-family: "Times New Roman", Times, serif;
+            text-align: center;
+        }
+
+        /* ***************** HEADER MODIFIKASI (LOGO DI KIRI) ***************** */
+        .header-container {
+            display: flex;
+            align-items: center; /* Memusatkan item secara vertikal */
+            justify-content: center; /* Memusatkan header secara horizontal */
+            width: fit-content;
+            margin: 20px auto 0;
+            text-align: left; /* Mengatur agar teks di dalam div ini dimulai dari kiri */
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px; /* Jarak antara logo dan teks */
+        }
+
+        .header-text {
+            /* Kontainer untuk Judul Utama dan Alamat */
+            display: block;
+        }
+
+        /* Ketentuan Wajib Soal: Teks Judul (di tengah, ukuran 24, warna biru) */
+        .judul-utama {
+            font-size: 24pt;
+            color: rgb(13, 23, 211);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .alamat-marquee {
+            color: red; 
+            font-size: 18pt;
+        }
+
+        /* ***************** END HEADER MODIFIKASI ***************** */
+
+        /* Ketentuan Wajib Soal: Garis pemisah size=5 */
+        .separator {
+            border: none;
+            height: 5px; 
+            background-color: rgb(13, 23, 211);
+            margin: 20px auto;
+            width: 90%;
+        }
+
+        /* TATA LETAK GAMBAR: Struktur Tabel */
+        .data-table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 450px; 
+        }
+
+        .data-table, .data-table td {
+            border: 1px double black; 
+            padding: 4px 8px;
+            text-align: left;
+            font-family: "Times New Roman", Times, serif; 
+        }
+
+        .data-table td:nth-child(2) {
+            width: 1%; 
+            text-align: center;
+        }
+
+        /* TATA LETAK GAMBAR: Kontainer untuk List dan Tombol */
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 800px; 
+            margin: 30px auto;
+            position: relative;
+        }
+
+        .list-group {
+            text-align: left;
+            margin-right: 150px; 
+            width: 50%;
+        }
+
+        .list-group p {
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        .list-group ol {
+            padding-left: 25px;
+        }
+        
+        /* Posisi Tombol SIMPAN (di tengah FIIK dan MIPA) */
+        .simpan-button-wrapper { /* Mengganti div dengan nama yang lebih deskriptif */
+            position: absolute;
+            top: 100px; /* Nilai disesuaikan agar di antara dua list */
+            left: 55%; 
+        }
+
+        .simpan-button-wrapper button {
+            padding: 5px 15px;
+            font-family: "Times New Roman", Times, serif; 
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-container"> <img src="Logo_unindra_png.png" alt="Logo UNINDRA" class="logo">
+        
+        <div class="header-text">
+            <h1 class="judul-utama"> UNIVERSITAS INDRAPRASTA PGRI (UNINDRA)
+            </h1>
+            
+            <marquee behavior="alternate" direction="right" class="alamat-marquee"> 
+                Jl.Nangka No.58 Tanjung Barat-JakSel
+            </marquee>
+        </div>
+    </header>
+
+    <hr class="separator">
+
+    <main> <table class="data-table"> <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td>Nama Anda masing-masing</td>
+            </tr>
+            <tr>
+                <td>NPM</td>
+                <td>:</td>
+                <td>NPM Anda masing-masing</td>
+            </tr>
+        </table>
+
+        <section class="content-container"> <div class="list-group">
+                <p>FIIK :</p>
+                <ol type="A">
+                    <li>Informatika</li>
+                    <li>Teknik Arsitektur</li>
+                    <li>Teknik Industri</li>
+                </ol>
+
+                <p>MIPA :</p>
+                <ol type="I">
+                    <li>Matematika</li>
+                    <li>Fisika</li>
+                    <li>Biologi</li>
+                </ol>
+            </div>
+
+            <div class="simpan-button-wrapper"> <button>SIMPAN</button>
+            </div>
+        </section>
+        
+        <p>Selamat Mengerjakan ------</p>
+    </main>
+
+</body>
+</html>
